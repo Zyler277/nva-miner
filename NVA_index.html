@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b14">
+<meta name="description" content="NVA — community-focused token project on BNB Chain.">
+<title>NVA — BNB Chain</title>
+<style>
+:root{--bg:#070a12;--card:#101827;--card2:#0d1420;--text:#f5f7fb;--muted:#9aa7bd;--a:#38d9ff;--b:#765cff;--line:#ffffff14}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#172653 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:#070a12e8;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:70px;display:flex;align-items:center;gap:18px}.logo{font-size:25px;font-weight:950;letter-spacing:.08em;margin-right:auto}.logo span{color:var(--a)}.links{display:flex;gap:22px;color:var(--muted);font-size:14px}.links a:hover{color:#fff}
+.lang{background:var(--card);color:#fff;border:1px solid var(--line);border-radius:10px;padding:10px}.btn,.ghost{display:inline-flex;align-items:center;justify-content:center;border-radius:12px;padding:12px 18px;font-weight:800;cursor:pointer}.btn{border:0;background:linear-gradient(135deg,var(--b),var(--a));color:#fff}.ghost{border:1px solid var(--line);background:#ffffff08}
+.hero{text-align:center;padding:92px 0 70px}.pill{display:inline-block;padding:7px 12px;border:1px solid #38d9ff44;border-radius:999px;color:var(--a);font-size:12px;font-weight:800}.hero h1{font-size:clamp(48px,9vw,90px);line-height:.94;letter-spacing:-.06em;margin:22px 0 18px}.grad{background:linear-gradient(90deg,#fff,var(--a));-webkit-background-clip:text;color:transparent}.hero p{max-width:700px;margin:0 auto 28px;color:var(--muted);font-size:18px;line-height:1.7}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.stats,.grid,.token{display:grid;gap:15px}.stats{grid-template-columns:repeat(4,1fr);margin-bottom:55px}.stat,.card{background:linear-gradient(180deg,#111a2a,#0c1320);border:1px solid var(--line);border-radius:18px;padding:22px}.stat strong{display:block;font-size:25px;margin-bottom:5px}.stat span,.card p,.note{color:var(--muted)}section{padding:65px 0}.ey{color:var(--a);font-size:12px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}h2{font-size:38px;margin:9px 0 12px}section>.wrap>p{color:var(--muted);max-width:750px;line-height:1.7}.grid{grid-template-columns:repeat(3,1fr);margin-top:28px}.token{grid-template-columns:1fr 1fr;margin-top:28px}.row{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid var(--line);color:var(--muted)}.row b{color:#fff;text-align:right;word-break:break-all}.contract{display:flex;gap:8px;margin-top:12px}.contract input{min-width:0;flex:1;background:#080d17;color:#fff;border:1px solid var(--line);border-radius:10px;padding:11px}.small{font-size:12px}
+.mining{display:grid;grid-template-columns:1fr 1fr;gap:18px}.minebox{text-align:center}.balance{font-size:42px;font-weight:900;margin:15px 0}.progress{height:10px;background:#ffffff0d;border-radius:99px;overflow:hidden}.bar{height:100%;width:0;background:linear-gradient(90deg,var(--b),var(--a));transition:.3s}.mine-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}.warning{border:1px solid #ffc10744;background:#ffc1070b;border-radius:12px;padding:12px;color:#d7cda8;font-size:13px;line-height:1.5}
+footer{padding:42px 0;border-top:1px solid var(--line);color:var(--muted);text-align:center}.social{display:flex;justify-content:center;gap:10px;margin-top:15px}
+@media(max-width:820px){.links{display:none}.stats,.grid,.token,.mining{grid-template-columns:1fr 1fr}}@media(max-width:560px){.stats,.grid,.token,.mining{grid-template-columns:1fr}.hero{padding-top:65px}.nav .btn{display:none}h2{font-size:31px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav">
+<a class="logo" href="#">N<span>V</span>A</a>
+<div class="links"><a href="#token" data-i="navToken">Token</a><a href="#mining" data-i="navMining">Mining</a><a href="#roadmap" data-i="navRoadmap">Roadmap</a><a href="#faq" data-i="navFaq">FAQ</a></div>
+<select id="lang" class="lang" aria-label="Language"></select>
+<a class="btn" href="#buy" data-i="buyBtn">Buy NVA</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+<div class="pill">BNB CHAIN • NVA</div>
+<h1><span data-i="hero1">Build the</span> <span class="grad">NVA</span> <span data-i="hero2">ecosystem.</span></h1>
+<p data-i="heroText">A transparent project hub for NVA token information, community tools, liquidity and future utilities.</p>
+<div class="actions"><a class="btn" href="#buy" data-i="buyBtn2">Buy NVA</a><a class="ghost" href="#token" data-i="tokenBtn">Token information</a></div>
+</div></header>
+
+<main>
+<div class="wrap stats">
+<div class="stat"><strong>21,000,000</strong><span data-i="supply">Total supply</span></div>
+<div class="stat"><strong>BNB Chain</strong><span data-i="network">Network</span></div>
+<div class="stat"><strong>NVA / BNB</strong><span data-i="pair">Liquidity pair</span></div>
+<div class="stat"><strong id="holders">—</strong><span data-i="holders">Holders</span></div>
+</div>
+
+<section id="token"><div class="wrap"><div class="ey" data-i="tokenEy">Token</div><h2 data-i="tokenTitle">NVA token</h2><p data-i="tokenText">Core project information. Links and live metrics should only be published after verification.</p>
+<div class="token"><div class="card"><h3 data-i="core">Core information</h3>
+<div class="row"><span>Token</span><b>NVA</b></div><div class="row"><span data-i="network">Network</span><b>BNB Chain</b></div><div class="row"><span data-i="supply">Total supply</span><b>21,000,000 NVA</b></div><div class="row"><span data-i="pair">Pair</span><b>NVA / WBNB</b></div>
+<div class="row"><span data-i="contract">Contract</span><b>0xb42ef6069f5912453e8c5a46f4a2fe92521...</b></div>
+</div>
+<div class="card"><h3 data-i="linksTitle">Official links</h3><p data-i="linksText">Use only verified project links.</p>
+<div class="actions" style="justify-content:flex-start"><a class="ghost" target="_blank" rel="noopener" href="https://bscscan.com/">BscScan</a><a class="ghost" target="_blank" rel="noopener" href="https://pancakeswap.finance/swap">PancakeSwap</a></div>
+<div class="contract"><input id="contract" value="0xb42ef6069f5912453e8c5a46f4a2fe92521..." readonly><button class="btn" id="copy" data-i="copy">Copy</button></div>
+</div></div></div></section>
+
+<section id="mining"><div class="wrap"><div class="ey" data-i="mineEy">Mining</div><h2 data-i="mineTitle">NVA mining portal</h2><p data-i="mineText">This demo keeps the displayed progress on this device. Real on-chain rewards require a secure backend and verified smart-contract payout system.</p>
+<div class="mining"><div class="card minebox"><h3 data-i="mineBalance">Accumulated balance</h3><div class="balance"><span id="balance">0.0000</span> NVA</div><div class="progress"><div id="bar" class="bar"></div></div><div class="mine-actions"><button class="btn" id="start" data-i="start">Start mining</button><button class="ghost" id="stop" data-i="stop">Stop</button></div><p class="small" id="status">Mining is stopped.</p></div>
+<div class="card"><h3 data-i="security">Security first</h3><div class="warning" data-i="securityText">Never enter a seed phrase or private key on this website. A wallet connection must use a standard wallet provider. The displayed demo balance is not a blockchain payment.</div><p class="note small" style="margin-top:15px" data-i="persist">Progress is stored locally so closing and reopening the page does not reset this demo balance.</p></div></div>
+</div></section>
+
+<section id="roadmap"><div class="wrap"><div class="ey" data-i="roadEy">Roadmap</div><h2 data-i="roadTitle">NVA development</h2><div class="grid">
+<div class="card"><h3>01 — Foundation</h3><p data-i="r1">Website, token information, community and security review.</p></div>
+<div class="card"><h3>02 — Ecosystem</h3><p data-i="r2">Liquidity tools, verified integrations and utility development.</p></div>
+<div class="card"><h3>03 — Growth</h3><p data-i="r3">International community, product expansion and transparent updates.</p></div>
+</div></div></section>
+
+<section id="buy"><div class="wrap"><div class="ey" data-i="buyEy">Get NVA</div><h2 data-i="buyTitle">Buy / trade NVA</h2><p data-i="buyText">Use verified contract and pool addresses before trading. Never send funds directly to an unknown address.</p><div class="actions" style="justify-content:flex-start"><a class="btn" target="_blank" rel="noopener" href="https://pancakeswap.finance/swap" data-i="pancake">PancakeSwap</a><a class="ghost" target="_blank" rel="noopener" href="https://bscscan.com/" data-i="bsc">BscScan</a></div></div></section>
+
+<section id="faq"><div class="wrap"><div class="ey" data-i="faqEy">FAQ</div><h2 data-i="faqTitle">Frequently asked questions</h2><div class="grid"><div class="card"><h3 data-i="q1">What is NVA supply?</h3><p data-i="a1">21,000,000 NVA.</p></div><div class="card"><h3 data-i="q2">Which network?</h3><p data-i="a2">BNB Chain.</p></div><div class="card"><h3 data-i="q3">Is mining payout guaranteed?</h3><p data-i="a3">No claim should be made until the payout mechanism is verified on-chain.</p></div></div></div></section>
+</main>
+<footer><div class="wrap">NVA Project • BNB Chain<div class="social"><a class="ghost" target="_blank" rel="noopener" href="https://t.me/+BgRT0DMw-vpkNjM0">💬 Telegram</a></div><p class="small" data-i="footer">Built with security and transparency in mind.</p></div></footer>
+
+<script>
+const langs={
+en:"English",tr:"Türkçe",de:"Deutsch",fr:"Français",es:"Español",it:"Italiano",pt:"Português",ru:"Русский",uk:"Українська",ar:"العربية",hi:"हिन्दी",zh:"中文",ja:"日本語",ko:"한국어",id:"Bahasa Indonesia",vi:"Tiếng Việt",th:"ไทย",pl:"Polski",nl:"Nederlands",ptbr:"Português (BR)"
+};
+const T={
+en:{navToken:"Token",navMining:"Mining",navRoadmap:"Roadmap",navFaq:"FAQ",buyBtn:"Buy NVA",buyBtn2:"Buy NVA",tokenBtn:"Token information",hero1:"Build the",hero2:"ecosystem.",heroText:"A transparent project hub for NVA token information, community tools, liquidity and future utilities.",supply:"Total supply",network:"Network",pair:"Liquidity pair",tokenEy:"Token",tokenTitle:"NVA token",tokenText:"Core project information. Links and live metrics should only be published after verification.",core:"Core information",contract:"Contract",linksTitle:"Official links",linksText:"Use only verified project links.",copy:"Copy",mineEy:"Mining",mineTitle:"NVA mining portal",mineText:"This demo keeps the displayed progress on this device. Real on-chain rewards require a secure backend and verified smart-contract payout system.",mineBalance:"Accumulated balance",start:"Start mining",stop:"Stop",security:"Security first",securityText:"Never enter a seed phrase or private key on this website. A wallet connection must use a standard wallet provider. The displayed demo balance is not a blockchain payment.",persist:"Progress is stored locally so closing and reopening the page does not reset this demo balance.",roadEy:"Roadmap",roadTitle:"NVA development",r1:"Website, token information, community and security review.",r2:"Liquidity tools, verified integrations and utility development.",r3:"International community, product expansion and transparent updates.",buyEy:"Get NVA",buyTitle:"Buy / trade NVA",buyText:"Use verified contract and pool addresses before trading. Never send funds directly to an unknown address.",pancake:"PancakeSwap",bsc:"BscScan",faqEy:"FAQ",faqTitle:"Frequently asked questions",q1:"What is NVA supply?",a1:"21,000,000 NVA.",q2:"Which network?",a2:"BNB Chain.",q3:"Is mining payout guaranteed?",a3:"No claim should be made until the payout mechanism is verified on-chain.",footer:"Built with security and transparency in mind."}
+};
+// Other languages use English fallback until professionally translated; structure is ready for 20-language expansion.
+for(const [k,v] of Object.entries(langs)){const o=document.createElement("option");o.value=k;o.textContent=v;document.getElementById("lang").appendChild(o)}
+function setLang(l){document.documentElement.lang=l;document.getElementById("lang").value=l;localStorage.setItem("nva_lang",l);const d=T[l]||T.en;document.querySelectorAll("[data-i]").forEach(e=>{if(d[e.dataset.i])e.textContent=d[e.dataset.i]})}
+setLang(localStorage.getItem("nva_lang")||"en");document.getElementById("lang").onchange=e=>setLang(e.target.value);
+
+let balance=Number(localStorage.getItem("nva_demo_balance")||"0"),timer=null;
+const b=document.getElementById("balance"),bar=document.getElementById("bar"),status=document.getElementById("status");
+function render(){b.textContent=balance.toFixed(4);bar.style.width=Math.min(balance/100*100,100)+"%";localStorage.setItem("nva_demo_balance",balance.toFixed(8))}
+render();
+document.getElementById("start").onclick=()=>{if(timer)return;status.textContent="Mining is running.";timer=setInterval(()=>{balance+=0.0001;render()},1000)};
+document.getElementById("stop").onclick=()=>{clearInterval(timer);timer=null;status.textContent="Mining is stopped."};
+document.getElementById("copy").onclick=async()=>{await navigator.clipboard.writeText(document.getElementById("contract").value);document.getElementById("copy").textContent="Copied";setTimeout(()=>document.getElementById("copy").textContent=(T[localStorage.getItem("nva_lang")||"en"].copy||"Copy"),1400)};
+</script>
+</body></html>
